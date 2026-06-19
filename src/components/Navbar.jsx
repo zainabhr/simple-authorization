@@ -18,9 +18,9 @@ function Navbar(props) {
                         <i className="fas fa-users "></i>
                         Users
                         </NavLink></li>
-                    <li><NavLink to="/setting">
-                        <i className="fas fa-cog"></i>
-                        Setting
+                    <li><NavLink to="/profile">
+                        <i class="fas fa-user user-i"></i>
+                        Profile
                         </NavLink></li>
                 </ul>
                 <div className="bg-color-btns">

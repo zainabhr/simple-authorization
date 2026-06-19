@@ -180,3 +180,17 @@ header button{
   padding-left: 250px;
   color: #76849F;
 }
+
+.sections{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.go-back-btn{
+  background-color: #76849F;
+  color: #F7F9FB;
+}
