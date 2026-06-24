@@ -8,6 +8,7 @@ import Home from './pages/Home'
 import Users from './pages/Users'
 import Setting from './pages/Setting'
 import Profile from './pages/Profile'
+import ProtectedRoutes from './utilities/ProtectedRoutes'
 
 
 function App() {
@@ -18,10 +19,13 @@ function App() {
         <Routes>
           <Route path='/' element={<Login />}/> 
           <Route path='/user' element={<User bgColor={bgColor} setBgColor={setBgColor} />} />
-          <Route path='/admin' element={<Admin bgColor={bgColor} setBgColor={setBgColor} />} />
+          <Route element={<ProtectedRoutes/>}>
+            <Route path='/admin' element={<Admin bgColor={bgColor} setBgColor={setBgColor} />} />
+            <Route path='/setting' element={<Setting />} />
+          </Route>
           <Route path='/home' element={<Home />} />
           <Route path='/users' element={<Users />} />
-          <Route path='/setting' element={<Setting />} />
+          
           <Route path='/profile' element={<Profile />} />
         </Routes>
         

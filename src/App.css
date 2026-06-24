@@ -194,3 +194,8 @@ header button{
   background-color: #76849F;
   color: #F7F9FB;
 }
+
+.admin-logout{
+  margin-left: 250px;
+  color: #030a57;
+}
