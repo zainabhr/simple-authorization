@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import User from './pages/User'
 import Login from './pages/Login'
@@ -15,7 +15,7 @@ function App() {
   const [bgColor, setBgColor] = useState('#ffffff')
   return (
     <>
-      <BrowserRouter basename='/simple-authorization'>
+      <HashRouter>
         <Routes>
           <Route path='/' element={<Login />}/> 
           <Route path='/user' element={<User bgColor={bgColor} setBgColor={setBgColor} />} />
@@ -29,7 +29,7 @@ function App() {
           <Route path='/profile' element={<Profile />} />
         </Routes>
         
-      </BrowserRouter>
+      </HashRouter>
     </>
   )
 }
